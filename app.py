@@ -6,6 +6,13 @@ from src.html_templates import css, user_template, bot_template
 
 
 def setup_webpage():
+    """
+    This function sets the root page of our streamlit application.
+    This has been linked to our LangChain + InstructorEmbeddings model
+    in order to perform pdf querying as well as a chatbot-like
+    interaction.
+    """
+
     load_dotenv()
     st.set_page_config(page_title="PDFChat", page_icon=":books:")
 
@@ -24,12 +31,13 @@ def setup_webpage():
 
     with st.sidebar:
         st.subheader("Attach your PDFs")
-        pdf_docs=st.file_uploader("Upload them here",
-                                  accept_multiple_files=True)
+        pdf_docs = st.file_uploader("Upload them here",
+                                    accept_multiple_files=True)
         if st.button("Process"):
             with st.spinner("Processing..."):
                 raw_text = get_pdf_text(pdf_docs)
                 st.write(raw_text)
+
                 text_chunks = get_chunks(raw_text)
                 st.write(text_chunks)
 
