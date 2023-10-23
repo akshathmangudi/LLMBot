@@ -8,7 +8,7 @@ scale projects for organization’s sake.
 * <a href="https://github.com/akshathmangudi/LLMBot#overview">Overview</a>
 * <a href="https://github.com/akshathmangudi/LLMBot#reqruiements">Requirements</a>
   * <a href="https://github.com/akshathmangudi/LLMBot#creating-virtualvenv">Creating virtualvenv</a>
-  * <a href="https://github.com/akshathmangudi/LLMBot#installing-dependencies">Installing dependencies</a/>
+  * <a href="https://github.com/akshathmangudi/LLMBot#installing-dependencies">Installing dependencies</a>
 * <a href="https://github.com/akshathmangudi/LLMBot#running-the-docker-image">Running Docker</a>
 * <a href="https://github.com/akshathmangudi/LLMBot#running-the-application">Running the application</a>
 * <a href="https://github.com/akshathmangudi/LLMBot#licensing">Licensing</a>
